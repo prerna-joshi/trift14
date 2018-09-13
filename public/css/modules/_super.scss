@@ -1,0 +1,46 @@
+@font-face {
+	font-family: "Objectivity";
+	src: url("font/Objectivity-Regular.woff2") format("woff2");
+}
+@font-face {
+	font-family: "Objectivity-Bold";
+    src: url("font/Objectivity-Bold.woff2") format("woff2");
+    
+}@font-face {
+	font-family: "Objectivity-Medium";
+	src: url("font/Objectivity-Medium.woff2") format("woff2");
+}
+@font-face {
+	font-family: "Objectivity-Regular";
+	src: url("font/Objectivity-Thin.woff2") format("woff2");
+}
+
+$f:Objectivity;
+$fb:Objectivity-Bold;
+$fm:Objectivity-Medium;
+$fr:Objectivity-Regular;
+h1{
+    font-family: $fm;
+}
+
+
+/* Color palette */
+$white: #fcfcfc;
+$deep-sky-blue: #2789f0;
+$white-three: #e1e1e1;
+$white-two: #e7e7e7;
+$aquamarine: #05dcb7;
+$black: #333333;
+$greyish: #b1b1b1;
+$tealish: #24cbae;
+$greyish-brown: #4f4f4f;
+$pinkish: #db7079;
+$white-four: #d7d7d7;
+$linkc:$deep-sky-blue;
+@import "mixins";
+input:focus, textarea:focus {
+    outline: none;
+}
+body{
+    margin: 0;
+}

@@ -1,0 +1,708 @@
+.travel-box{
+	margin-left: auto !important;
+	margin-right: auto !important;
+    color: #525252;
+    .landbar-notch{
+        width: 36px;
+        height: 36px;
+    }
+}
+
+.flight-box {
+    @include sh-box;
+    width: 584.8px;
+    max-height: 100%;
+    flex-basis: 584.8px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    
+}
+@mixin portname{
+      font-family: $fb;
+    font-size: 12.8px;
+   
+    padding-bottom: 15px;
+}
+
+.inner-box {
+        padding: 32px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 62px );
+}
+
+.uppper-table {
+    display: table;
+    margin-bottom: 16px;
+    HEIGHT: calc(100% - 63px);
+}
+
+.inner2 {
+    display: table-cell;
+    width: 0.1px;
+    border-left: solid 0.8px #ebebeb;
+
+}
+
+.landbar-notch {
+    float: left;
+
+}
+
+.flight-company-logo {
+    width: 69px;
+    height: 22px;
+    margin-bottom: 30px;
+    padding-top: 8px;
+
+}
+
+.inner1 {
+       flex-direction: column;
+    display: flex;
+    width: 202px;
+    padding-right: 25px;
+}
+
+.inner3 {
+    padding-left: 18px;
+        vertical-align: -webkit-baseline-middle;
+    display: table-cell;
+    width: 325px;
+}
+
+.time {
+        width: 42px;
+    display: table-cell;
+    font-family: Objectivity;
+    font-size: 10px;
+   
+
+}
+
+.portname {
+  @include portname;
+
+}
+
+.terminal {
+    font-family: Objectivity;
+    font-size: 10px;
+    
+
+}
+
+.nts {
+    display: table-cell;
+    padding-left: 15px;
+    
+}
+
+
+.travel-time {
+    margin: 15px 0px 15px 55px;
+    height: 33px;
+    display: table;
+    font-family: $f;
+    font-size: 10px;
+    div {
+        vertical-align: middle;
+        display: table-cell;
+    }
+
+    
+    .stopover {
+
+        color: $deep-sky-blue;
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+
+}
+
+
+
+
+
+.flight-day-time {
+    display: table;
+    margin-top: 36px;;
+    height: 25px;
+    margin-bottom: 15px;
+    div {
+        padding: 8px 12px 5px 10px;
+        float: left;
+        border-radius: 8px;
+        vertical-align: middle;
+        height: 100%;
+        font-family: $f;
+        font-size: 11.2px;
+        color: #ffffff;
+        margin-left: auto;
+    }
+    .flight-day {
+        background-color: #404040;
+
+        margin-right: 8px;
+    }
+    .flight-time {
+        background-color: $deep-sky-blue;
+    }
+}
+
+
+
+.dropdown {
+    margin-top: 10px;
+    width: -webkit-fill-available;
+    position: relative;
+    select {
+       
+        @include sh-box;  
+        padding: 0px 20px;
+        @include combined;
+        margin: 0px;
+        right: 10px;
+        height: 40px;
+        top: 0px;
+        width: 100%;
+        background-color: #f3f3f3;
+    }
+}
+
+.dropdown:after {
+    @include dropdown;
+    padding: 13px 0px 0px 0px;
+}
+
+
+
+.input-box {
+    margin-bottom: 24px;
+}
+
+.fn-container {
+      padding: 11px 17px;
+    height: 31.8px;
+}
+
+.num-flight {
+height: fit-content;
+    width: 0px;
+    float:left;
+              padding: 10px 12px 9px 8px;
+  font-family: $f;
+font-size: 10px;
+    border-radius: 4.4px;
+  background-color: $deep-sky-blue;
+    color:white;
+}
+
+.flight-name {
+   padding-left: 23px;
+    margin-top: 5px;
+    font-size: 11.2px;
+    font-family: $fb;
+}
+
+.plane-name {
+    padding-left: 23px;
+    margin-top: 2px;
+      font-size: 11.2px;
+font-family: $f;
+   
+}
+
+.baggage-container {
+    margin-top: 16px;
+    margin-bottom: 10px;
+    width: 100%;
+    display: table;
+}
+
+.hand {
+    margin-left: auto;
+    display: table-cell;
+}
+
+.luggage {
+    
+    display: table-cell;
+}
+
+.plane-namem {
+          font-size: 11.2px;
+font-family: $f;
+  
+
+}
+
+.lquant {
+     margin-top: 7px;
+    font-size: 11.2px;
+    font-family: $fb;
+
+}
+
+.hquant {
+      margin-top: 7px;
+    font-size: 11.2px;
+    font-family: $fb;
+
+}
+
+.box-priceline {
+ padding-top: 4px;
+    float:left;
+    
+      width: fit-content;
+font-size: 10px;
+    font-family: $f;
+    
+}
+
+.box-price {
+    
+    float:right;
+    font-family: $fb;
+    color: $deep-sky-blue;
+     font-size: 17.6px;
+    .currn{
+        padding-top:2px;
+        float:left;
+        font-size: 14.4px;
+    }
+    .tot{
+        padding-left: 4px;
+        float:right;    }
+    
+}
+
+.box-bottom {
+           margin-top: 28px;
+    margin-bottom: auto;
+    height: 18px
+}
+
+.action-box {
+  height: 100%;
+      @include sh-box;
+    flex-basis:     320px;
+    width: 320px;
+    flex-grow:0;
+    flex-shrink: 0;
+    flex:1;
+}
+
+.travel-box {
+      display: flex;
+    margin: 25px;
+}
+
+.action-box-container {
+     
+        margin-left: 25px;
+    display: table-cell;
+ 
+}
+
+.fl-timeline {
+
+}
+
+.fl-arrows {
+    float:right;
+    img{
+        margin-left: 10px;
+        padding-bottom: 4px;
+    }
+}
+
+.fl-tl-title {
+     float: left;
+    font-family: $fm;
+    font-size: 12.8px;
+    color:$deep-sky-blue;
+}
+
+.fl-timeline-container {
+       margin-top: 34px;
+    display: flex;
+}
+
+.fl-title-container {
+    height:13px;
+}
+
+
+    .left-border {
+display: table-cell;
+       
+        height: 100%;
+        width: 4.8px;
+
+        border-radius: 4.4px;
+        background-color: #e6e6e6;
+    }
+
+
+.fl-no-container {
+    display: table-cell;
+}
+
+.tl-port {
+    @include portname;
+    padding-left: 10px;
+    font-family: $fm;
+    width: 157px;
+    display: table-cell;
+}
+
+.one-stop {
+    display: flex;
+        height: 50px;
+}
+
+.ttime {
+    @extend .time;
+
+ padding: 5px 13px;
+}
+
+.left-borderr {
+    @extend .left-border;
+      width: 8.6px;
+    top: -6px;
+        height: 111%;
+    position: relative;
+}
+
+.timeline {
+    
+}
+
+.one-stop-from {
+    .tl-port,.ttime{
+                top: 10px;
+    position: relative;
+    }
+    
+}
+
+.to-from {
+    margin-left: 25px;
+
+}
+
+.stopoverr {
+    margin-top: 17px;
+  font-family:$fb;
+    color: $deep-sky-blue;
+    font-size: 11.2px;
+    
+}
+
+.fl-box-submit {
+    @include sm-btn;
+    top:10px;
+    
+}
+
+.fl-box-submited {
+    cursor:default;
+    background-color: $tealish;
+    sm{
+        font-family: $fm;
+    }
+}
+
+.h-name-container {
+margin-top: 24px;
+    display: table;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.ht-name {
+    @extend .portname;
+      padding: 10px 0px 9px 11.2px;
+    width: 157px;
+}
+
+.hleft-border {
+    @extend .left-border;
+    width: 5.8px;
+}
+
+.hotel-day-time {
+    @extend .flight-day-time;
+    
+}
+
+.hotel-amenities {
+    padding: 13px 0px 16px 0px;
+    display: table;
+    .ht-type, .ht-wifi ,.ht-cancl{
+            width: fit-content;
+        padding-right: 41px;
+        display: table-cell;
+            font-size:11.2px;
+            color:#404040;
+        .ht-label{
+            font-family: $f;
+        }
+        .ht-disc{
+            font-family: $fb;
+        }
+        
+    }
+    .ht-cancl{
+            padding-right: 0px !important;
+        }
+}
+
+.outer {
+        
+              width: 10.6px;
+    height: 10.6px;
+    margin-right: 4px;
+    position: relative;
+}
+
+.inner {
+    
+  top: 16%;
+    left: 15%;
+    width: 70%;
+    height: 70%;
+    position: relative;
+}
+
+.shapeborder { border:1.5px solid #dddddd
+
+; }
+.circle { border-radius: 50%; }
+
+.rating {
+    display: flex;
+    float:left;
+   
+}
+ .star1{
+        #s1{
+            .inner{
+                background-color: #525252;}
+        }
+    }
+.star2{
+        #s1,#s2{
+            .inner{
+                background-color:#525252;}
+        }
+    }
+.star3{
+        #s1,#s2,#s3{
+            .inner{
+                background-color: #525252;}
+        }
+    }
+.star4{
+        #s1,#s2,#s3,#s4{
+            .inner{
+                background-color: #525252;}
+        }
+    }
+.star5{
+        #s1,#s2,#s3,#s4,#s5{
+            .inner{
+                background-color: #525252;}
+        }
+    }
+
+
+.rating-container {
+    margin-top: 20px;   
+}
+
+.votes { float: right;
+padding-top: 3px;
+    font-size: 11.2px;
+    font-family: $fb;
+    sm{
+        font-family: $f;
+    }
+    
+}
+
+.hotel-carousal {
+    overflow: hidden;
+    border-radius: 6.4px;
+    max-height: 207px;
+    max-width: 267px;
+    position: relative;
+    .rarrow, .larrow{
+        position: absolute;
+    top: 73px;
+    padding: 26px 96px;
+    transform: rotate(90deg);
+    cursor: pointer;
+        &:hover{
+             background-color: #ffffff30;
+        }
+    
+    }
+    
+}
+
+
+.larrow {
+       position: absolute;
+    top: 73px;
+    padding: 26px 96px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    left: -79px;
+    
+}
+
+
+.rarrow {
+    
+    right: -79px;
+}
+
+.ac-name-container {
+    @extend .h-name-container;
+    margin-top: 0;
+}
+
+.ac-name {
+    @extend .ht-name;
+    
+}
+
+.klasdf {
+    display: table-cell;
+}
+
+.to-place {
+    @extend .ht-name;
+       padding-top: 29px;
+}
+
+.hotel-image {
+    
+}
+
+.rem-added {
+    background-color: $pinkish;
+
+}
+
+.at-heading {
+    padding-top: 20px;
+    font-family: $fb;
+    font-size: 14.4px;
+}
+
+.act-day-time {
+    @extend .hotel-day-time;
+    display: block;
+    margin-top: 18px;
+    .flight-day,
+    .flight-time{
+        width: fit-content;
+        float: none;
+        margin-left: 0;
+        margin-top: 7.2px;
+        height: fit-content;
+    }
+   
+}
+
+.act-title {
+    font-family: $fb;
+    font-size: 11.8px;
+}
+
+.act-disc {
+    font-family: $fm;
+    font-size: 11.2px;
+    line-height: 14.4px;
+    text-align: justify;
+    margin-top: 16.4px;
+    margin-bottom: 12px;
+}
+
+.act-feat {
+    display: flex;
+    margin-top: 14.4px;
+    margin-bottom: auto;
+     .act-lang,.act-duration{
+        font-size:11.2px;
+            color:#404040;
+        .ht-label{
+            font-family: $f;
+        }
+        .ht-disc{
+            font-family: $fb;
+        }
+        margin-right: 41px;
+        width: 52px;
+    }
+}
+
+.act-icon {
+    height: 16px;
+    width: 15px;
+}
+
+.action-box {
+   
+}
+
+.action-box {
+   
+}
+
+.action-box-containera {
+    @extend .action-box-container;
+    margin-left: 0;
+    .action-box{
+        width: 267px;
+        flex-basis: 267px;
+    }
+    .hotel-day-time{
+        margin-top: 57px;
+    }
+}
+
+.action-box-containerb {
+    @extend .action-box-container;
+    margin-left: 20px;
+    .action-box{
+            height: fit-content;
+        width: 300px;
+        flex-basis: 300px;
+    }
+    .inner-box{
+        padding: 23px;
+    }
+}
+
+.smap-container {
+    img{
+    height: 100%;
+        width: 100%;}
+}
+
+.trcontainer {
+        width: 2180px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flight-days {
+	
+}

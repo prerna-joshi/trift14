@@ -1,0 +1,328 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title> Provide Information</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+	<div id="wrapper">
+	 <div class="Hcontainer">
+            <div id="header">
+                <a class="logo"><img src='img/logo.png'width='27px' height='27px'></a>
+                <div>
+                    <ul class="menu">
+                        <li class="menuitem selected-item"><a href=”#”>Home</a>
+                 
+                        
+                        
+                        </li>
+
+                        <li class="menuitem"><a href=”#”>Discover</a>   <div class=" menu-drop menu-drop1">    <div class="select-values-wrapper ">
+                             <div class="menu1-image"></div>
+				<div class="select-values-container">
+                    
+					<div class="select-value-wrapper">
+						<div class="value-border"></div>
+						<div class="value">Trips by Season</div>
+					</div>
+					<div class="select-value-wrapper">
+						<div class="value-border"></div>
+						<div class="value">Go Lucky</div>
+					</div>
+				
+				</div>
+                            </div></div></li>
+                        <li class="menuitem H-menuitem "><a href=”#”>Profile</a>
+                        
+                          <div class=" menu-drop menu-drop2">    <div class="select-values-wrapper ">
+                            
+				<div class="select-values-container">
+                    
+					<div class="select-value-wrapper">
+						<div class="value-border"></div>
+						<div class="value">My Trips</div>
+					</div>
+					<div class="select-value-wrapper">
+						<div class="value-border"></div>
+						<div class="value">Create Itinerary</div>
+					</div>
+                    <div class="select-value-wrapper">
+						<div class="value-border"></div>
+						<div class="value">Dashboard</div>
+					</div>
+				
+				</div>
+                              <div class="menu-logout">Logout</div>
+                            </div></div>
+                        </li>
+                        <li class="menuitem curr-menuitem">
+                           AED<img class="m-arrow" src="img/mar.svg">
+                                     <div class=" menu-drop menu-drop3">    <div class="select-values-wrapper ">
+                            
+				<div class="select-values-container">
+                    
+					<div class="select-value-wrapper">
+						<div class="value-border"></div>
+						<div class="value">AED</div>
+					</div>
+					<div class="select-value-wrapper">
+						<div class="value-border"></div>
+						<div class="value">USD</div>
+					</div>
+                    <div class="select-value-wrapper">
+						<div class="value-border"></div>
+						<div class="value">GBP</div>
+					</div>
+                    <div class="select-value-wrapper">
+						<div class="value-border"></div>
+						<div class="value">INR</div>
+					</div>
+				
+				</div>
+                           
+                            </div></div>
+                        </li>
+                <li class="menu-trip">
+                        <div class="cart menuitem "><img src="img/cart.svg"> </div>
+                        <div class="cart-no menuitem  menu-trip">0</div>
+                        <div class="bell menuitem  menu-trip"><img src="img/bell.svg"> </div>
+                        <div class="bell-no menuitem  menu-trip">0</div>
+                    
+                                <div class=" menu-drop menu-drop3">  
+                                    <div class="cart-drop-notch"></div>
+                                    <div class="cart-drop">
+                                    trip you’re planning
+                                    
+                                    </div>
+                            
+                    </div>
+                        </li>
+                            </ul>
+
+                </div>
+
+
+            </div>
+        </div>
+		<div id="divider"></div>
+		<div class="container">
+			<div id="section1">
+				<div class="cover">
+
+					<div class="cover-notch">
+						<div class="cover-dp"></div>
+						<a class="cover-name">Ryan Shirley </a><a class="cover-handle">@ryan.shirley</a>
+					</div>
+
+				</div>
+			</div>
+			<div id="section2">
+				<div class="night">
+					3 Nights
+				</div>
+				<div class="tagline-container">
+					<h1 class="tagline">Experience True and Authentic Arabia</h1>
+					<div class="locations">Zakynthos, Metora and Athens</div>
+				</div>
+				<div id="divider"></div>
+				<div class="flexx-container">
+					<div class="fl-day-cont">
+						<div class="fl-bk-title">Book the Essentials
+							<h>Flights</h>
+						</div>
+						<div class="flight-days">
+							<% var x = tripdet[0].flights; %>
+							<% for(var i=0;i<Object.keys(x).length;i++){ %>
+							<%	if(x['day'+(i+1)]== null){  %>
+								<div class="fl-day"> <img src="./img/flight-icong.svg" class="fl-day-icon">
+									<div class="fl-day-name">Day <%= (i+1) %></div>
+								</div>
+								<% } else{ %>
+									<div class="fl-day fl-day-bl"> <img src="./img/flight-iconb.svg" class="fl-day-icon">
+										<div class="fl-day-name">Day <%= (i+1) %></div>
+									</div>
+									<% } %>
+								<% } %>
+							</div>
+					</div>
+					<div class="fl-map"> <img src="img/map.png">
+						<div class="map-caption">Proximity Map View of Destinations</div>
+					</div>
+
+				</div>
+				<div id="divider"></div>
+				<div class="heading-booking">Recommended Options</div>
+				<div class="booking-bar">
+					<div id="filter" class="bl-box">Filter</div>
+					<div id="by-price">By Price</div>
+					<div id="by-price">By Fastest Route</div>
+					<div id="by-price">By Least Stopovers</div>
+
+				</div>
+				<% for(var i=0;i<allf.length;i++){  %>
+				<div class="travel-box">
+					<div class="flight-box">
+						<div class="inner-box">
+							<div class="uppper-table">
+								<div class="inner1">
+									<div>
+										<img class="landbar-notch" src="img/flight.svg">
+										<img class="flight-company-logo" src="img/flightcompany.PNG">
+									</div>
+									<div class="airport">
+										<div class="time"><%=  moment(allf[i].FlightDetails[0].DepartureDateTime).format('LT'); %></div>
+										<div class="nts">
+											<div class="portname"><%= allf[i].FlightDetails[0].OriginAirportName %></div>
+											<div class="terminal">Terminal <%= allf[i].FlightDetails[0].OrgTerminal %></div>
+
+										</div>
+									</div>
+									<div class="travel-time">
+										<div class="left-border"></div>
+										<%  if(allf[i].Connection.Onward.IsConnection==false){ %>
+										<div class="stopover">No Stopover</div>
+										<% } else{ %>
+											<div class="stopover"><%= allf[i].Connection.Onward.NoOfStops %> Stops</div>
+										<% } %>
+										<div class="timet">| <%= allf[i].FlightDetails[0].Duration %> minutes</div>
+									</div>
+									<div class="airport">
+										<div class="time"><%=  moment(allf[i].FlightDetails[0].ArrivalDateTime).format('LT'); %></div>
+										<div class="nts">
+											<div class="portname"><%= allf[i].FlightDetails[0].DestinationAirportName %>
+											</div>
+											<div class="terminal">Terminal <%= allf[i].FlightDetails[0].DesTerminal %></div>
+
+										</div>
+									</div>
+									<div class="flight-day-time">
+										<div class="flight-day"><%=  moment(allf[i].FlightDetails[0].DepartureDateTime).format('MMM Do YY'); %>
+											<div class="flight-time">
+												<%=  moment(allf[i].FlightDetails[0].DepartureDateTime).format('LT'); %>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+
+
+								<div class="inner2"></div>
+								<div class="inner3">
+									<div class="input-box">
+										<div class="input-label">Select Class</div>
+										<div class="dropdown">
+											<select name="flight-class">
+                            <option selected>Economy</option>
+                                <option>Bussiness</option>
+                            </select>
+										</div>
+									</div>
+									<div class="input-box">
+										<div class="input-label">Select Meal</div>
+										<div class="dropdown">
+											<select name="flight-meal">
+                            <option selected>Standerd Meal</option>
+                                <option>Vegetarian</option>
+                            </select>
+										</div>
+									</div>
+									<div id="divider"></div>
+									<div class="fn-container">
+										<div class="num-flight">1</div>
+										<div class="flight-name">Emirates EK 100</div>
+										<div class="plane-name">Airbus A380</div>
+									</div>
+									<div id="divider"></div>
+									<div class="baggage-container">
+										<div class="luggage"><img src="img/bagg.svg">
+											<div class="plane-namem">Checked Baggage</div>
+											<div class="lquant">
+												<%= allf[i].FlightDetails[0].Baggage.Weight %>/ Person</div>
+										</div>
+										<div class="hand">
+											<img src="img/bagg.svg">
+											<div class="plane-namem">Hand Baggage</div>
+											<div class="hquant">
+												<%= allf[i].FlightDetails[0].Baggage.Pieces %>/ Person</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div id="divider"></div>
+							<div class="box-bottom">
+								<div class="box-priceline">Price Inclusive of Airport Taxes and Surcharges</div>
+
+								<div class="box-price">
+									<div class="currn"><%= allf[i].FlightDetails[0].CurrencyCode %> </div>
+									<div class="tot"><%= allf[i].FareDescription.PaxFareDetails[0].OtherInfo.GrossAmount %></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="action-box-container">
+						<div class="action-box">
+							<div class="inner-box">
+								<div class="fl-title-container">
+									<div class="fl-tl-title">Timeline of Flight</div>
+									<div class="fl-arrows">
+										<img src="img/arrowd.svg">
+										<img src="img/arrow.svg">
+									</div>
+								</div>
+								<div class="fl-timeline-container">
+									<div class="timeline">
+										<div class="num-flight">1</div>
+										<div class="to-from">
+											<div class="one-stop">
+												<div class="ttime"><%=  moment(allf[i].FlightDetails[0].ArrivalDateTime).format('LT'); %>
+												</div>
+												<div class="left-borderr"></div>
+												<div class="tl-port">
+													<%= allf[i].FlightDetails[0].OriginAirportName %>
+												</div>
+											</div>
+											<div class="one-stop one-stop-from">
+												<div class="ttime"><%=  moment(allf[i].FlightDetails[0].DepartureDateTime).format('LT'); %>
+												</div>
+												<div class="left-borderr"></div>
+												<div class="tl-port">
+													<%= allf[i].FlightDetails[0].DestinationAirportName %>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<%  if(allf[i].Connection.Onward.IsConnection==false){ %>
+								<div class="stopoverr">
+									No Stopover
+								</div>
+								<% } %>
+
+								<a href="/flightdetails?param1=<%= allf[i].FlightDetails[0].FlightID %>&param2=<%= i %>"><div class="fl-box-submit">Select this Flight</div></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<% } %>
+				
+
+			</div>
+		</div>
+	</div>
+	<div class="footer-space"></div>
+	<div id="footer">
+		<div id="divider"></div>
+        <div class="footer-inner">
+            <div class="footer-text"><h>Up Next</h>: Book your Itineary</div>
+		<a href="/extrabook"><button class="pref-submit">Next Step</button></a>
+        </div>
+	</div>
+</body>
+
+</html>

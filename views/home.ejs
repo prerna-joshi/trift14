@@ -1,0 +1,298 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title> Trift</title>
+	<link rel="stylesheet" type="text/css" href="css/landing.css" />
+
+
+
+</head>
+
+<body>
+	<div id="wrapper">
+	 <div class="Hcontainer">
+            <div id="header">
+                <a class="logo"><img src='img/logo.png'width='27px' height='27px'></a>
+                <div>
+                    <ul class="menu">
+                        <li class="menuitem selected-item"><a href=”#”>Home</a>
+                 
+                        
+                        
+                        </li>
+
+                        <li class="menuitem"><a href=”#”>Discover</a>   <div class=" menu-drop menu-drop1">    <div class="select-values-wrapper ">
+                             <div class="menu1-image"></div>
+				<div class="select-values-container">
+                    
+					<div class="select-value-wrapper">
+						<div class="value-border"></div>
+						<div class="value">Trips by Season</div>
+					</div>
+					<div class="select-value-wrapper">
+						<div class="value-border"></div>
+						<div class="value">Go Lucky</div>
+					</div>
+				
+				</div>
+                            </div></div></li>
+                        <li class="menuitem H-menuitem "><a href=”#”>Profile</a>
+                        
+                          <div class=" menu-drop menu-drop2">    <div class="select-values-wrapper ">
+                            
+				<div class="select-values-container">
+                    
+					<div class="select-value-wrapper">
+						<div class="value-border"></div>
+						<div class="value">My Trips</div>
+					</div>
+					<div class="select-value-wrapper">
+						<div class="value-border"></div>
+						<div class="value">Create Itinerary</div>
+					</div>
+                    <div class="select-value-wrapper">
+						<div class="value-border"></div>
+						<div class="value">Dashboard</div>
+					</div>
+				
+				</div>
+                              <div class="menu-logout">Logout</div>
+                            </div></div>
+                        </li>
+                        <li class="menuitem curr-menuitem">
+                           AED<img class="m-arrow" src="img/mar.svg">
+                                     <div class=" menu-drop menu-drop3">    <div class="select-values-wrapper ">
+                            
+				<div class="select-values-container">
+                    
+					<div class="select-value-wrapper">
+						<div class="value-border"></div>
+						<div class="value">AED</div>
+					</div>
+					<div class="select-value-wrapper">
+						<div class="value-border"></div>
+						<div class="value">USD</div>
+					</div>
+                    <div class="select-value-wrapper">
+						<div class="value-border"></div>
+						<div class="value">GBP</div>
+					</div>
+                    <div class="select-value-wrapper">
+						<div class="value-border"></div>
+						<div class="value">INR</div>
+					</div>
+				
+				</div>
+                           
+                            </div></div>
+                        </li>
+                <li class="menu-trip">
+                        <div class="cart menuitem "><img src="img/cart.svg"> </div>
+                        <div class="cart-no menuitem  menu-trip">0</div>
+                        <div class="bell menuitem  menu-trip"><img src="img/bell.svg"> </div>
+                        <div class="bell-no menuitem  menu-trip">0</div>
+                    
+                                <div class=" menu-drop menu-drop3">  
+                                    <div class="cart-drop-notch"></div>
+                                    <div class="cart-drop">
+                                    trip you’re planning
+                                    
+                                    </div>
+                            
+                    </div>
+                        </li>
+                            </ul>
+
+                </div>
+
+
+            </div>
+        </div>
+		<div id="divider"></div>
+		<div class="slider">
+			<div class="hero">
+				<img src="img/cover.jpg">
+
+
+			</div>
+		</div>
+		<div class="container">
+			<div id="section1">
+				<div class="search ">
+					<img class="s-icon" src="img/search.svg">
+					<input id="search-input" placeholder="Search for Something" type="text">
+				</div>
+			</div>
+			<div class="landing-bar">
+				<div id="filter" class="bl-box">Filter</div>
+				<div id="by-price">By Price</div>
+				<img id="runn" class="landbar-notch" src="img/runn.svg">
+				<img id="bed" class="landbar-notch" src="img/bed.svg">
+				<img id="car" class="landbar-notch" src="img/car.svg">
+				<img id="flight" class="landbar-notch" src="img/flight.svg">
+				<div id="include" class="bl-box">Include</div>
+			</div>
+			<div class="trip-component">
+				<div class="trip-heading">
+					<h1 class="ttitle"> Recommended Trips</h1>
+					<a href="#" id="show-more">show all (12)</a>
+				</div>
+				<div class="trip-carousal">
+						<% for(var i=0;i<4;i++){  %>
+					<div class="trip-container">
+						<div class="photo">
+						</div>
+
+						<div class="tr-nights "> <%= items[0].days %> Nights</div>
+						<a href="/info">	<h1 class="trip-title"><%= items[0].title %></h1></a>
+						<p class="trip-creater"><%= items[0].auth %></p>
+						<div class="trip-price"><%= items[0].price %></div>
+						<div class="trip-curr"><%= items[0].currency %></div>
+					</div>
+					<% } %>
+
+
+				</div>
+			</div>
+			<div id="section2">
+				<div class="col1">
+
+					<div class="rectangle">
+
+					</div>
+				</div>
+				<div class="col2">
+					<h1 id="si">Spotlight Itinearies</h1>
+					<div class="two">
+
+							<div class="trip-container">
+									<div class="photo">
+									</div>
+			
+									<div class="tr-nights "> <%= items[0].days %></div>
+									<a href="/info">	<h1 class="trip-title"><%= items[0].title %></h1></a>
+									<p class="trip-creater"><%= items[0].auth %></p>
+									<div class="trip-price"><%= items[0].price %></div>
+									<div class="trip-curr"><%= items[0].currency %></div>
+								</div>
+							
+									<div class="trip-container trip-containerl">
+										<div class="photo">
+										</div>
+				
+										<div class="tr-nights "> <%= items[0].days %></div>
+										<a href="/info">	<h1 class="trip-title"><%= items[0].title %></h1></a>
+										<p class="trip-creater"><%= items[0].auth %></p>
+										<div class="trip-price"><%= items[0].price %></div>
+										<div class="trip-curr"><%= items[0].currency %></div>
+									</div>
+								
+
+					</div>
+				</div>
+			</div>
+			<div id="sectionc">
+				<div id="divider"></div>
+				<div class="site-cards">
+					<div class="cards">
+						<img class="card-icon" src="img/walk.svg">
+						<div class="card-title">Trips curated just for you</div>
+						<div class="card-disc">We learn about your interests and preference and suggest you the most personalized ones everytime</div>
+
+					</div>
+					<div class="cards">
+
+
+						<img class="car--d-icon" src="img/bike.svg">
+						<div class="card-title">Itineararies made simple</div>
+						<div class="card-disc">Itineraries presented in the most simple form all you have to do is to follow and enjoy your stay</div>
+
+					</div>
+					<div class="cards cardsl">
+
+
+						<img class="card-icon" src="img/people.svg">
+						<div class="card-title">Curated by the travelers</div>
+						<div class="card-disc">Trips curated people around the world to give you the most realistic experiences</div>
+
+					</div>
+				</div>
+				<div id="divider"></div>
+			</div>
+			<div class="trip-component">
+				<div class="trip-heading">
+					<h1 class="ttitle">Popular Trips</h1>
+					<a href="#" id="show-more">show all (12)</a>
+				</div>
+				<div class="trip-carousal">
+						<% for(var i=0;i<4;i++){  %>
+								<div class="trip-container">
+									<div class="photo">
+									</div>
+			
+									<div class="tr-nights "> <%= items[0].days %></div>
+									<a href="/info">	<h1 class="trip-title"><%= items[0].title %></h1></a>
+									<p class="trip-creater"><%= items[0].auth %></p>
+									<div class="trip-price"><%= items[0].price %></div>
+									<div class="trip-curr"><%= items[0].currency %></div>
+								</div>
+								<% } %>
+
+
+				</div>
+			</div>
+			<div class="trip-component">
+				<div class="trip-heading">
+					<h1 class="ttitle">Far East Holidays</h1>
+					<a href="#" id="show-more">show all (12)</a>
+				</div>
+				<div class="trip-carousal">
+						<% for(var i=0;i<4;i++){  %>
+								<div class="trip-container">
+									<div class="photo">
+									</div>
+			
+									<div class="tr-nights "> <%= items[0].days %></div>
+									<a href="/info">	<h1 class="trip-title"><%= items[0].title %></h1></a>
+									<p class="trip-creater"><%= items[0].auth %></p>
+									<div class="trip-price"><%= items[0].price %></div>
+									<div class="trip-curr"><%= items[0].currency %></div>
+								</div>
+								<% } %>
+
+				</div>
+			</div>
+			<div class="wide-rectangle">
+
+			</div>
+			<div class="trip-component">
+				<div class="trip-heading">
+					<h1 class="ttitle">Featured Trips in Dubai</h1>
+					<a href="#" id="show-more">show all (12)</a>
+				</div>
+				<div class="trip-carousal">
+						<% for(var i=0;i<4;i++){  %>
+								<div class="trip-container">
+									<div class="photo">
+									</div>
+			
+									<div class="tr-nights "> <%= items[0].days %></div>
+									<a href="/info">	<h1 class="trip-title"><%= items[0].title %></h1></a>
+									<p class="trip-creater"><%= items[0].auth %></p>
+									<div class="trip-price"><%= items[0].price %></div>
+									<div class="trip-curr"><%= items[0].currency %></div>
+								</div>
+								<% } %>
+
+				</div>
+			</div>
+
+
+		</div>
+
+	</div>
+</body>
+
+</html>

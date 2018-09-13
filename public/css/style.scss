@@ -1,0 +1,484 @@
+/* Color palette */
+
+@import "modules/super.scss";
+@import "modules/landing-menu.scss";
+@import "modules/cover.scss";
+@import "modules/tagline.scss";
+@import "modules/common.scss";
+@import "modules/forms.scss";
+@import "modules/notch.scss";
+@import "modules/trcomponents.scss";
+@import "modules/pref-list.scss";
+@import "modules/prof-info.scss";
+
+/* Text styles */
+
+
+
+
+
+
+.form-container {
+	max-width: 449px;
+	width: 119%;
+
+}
+
+.twocol {
+	width: 100%;
+	display: table;
+	margin-bottom: 27px;
+	.input-box {
+
+		display: table-cell;
+	}
+}
+
+
+
+.combined-input {
+	margin-top: 10px;
+	width: -webkit-fill-available;
+	height: 40px;
+	@include sh-box;
+	.tr-adults {
+		@include combined;
+	}
+	.tr-childs {
+		@include combined;
+	}
+	.rm-adults {
+		@include combined;
+	}
+	.rm-rooms {
+		@include combined;
+	}
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+.modeoftravel {
+	padding-left: 40px;
+	width: auto;
+}
+
+.Passengers {
+	padding-left: 40px;
+}
+
+.drpdwnn {
+	position: relative;
+}
+
+.drpdwnn:after {
+	@include dropdown;
+}
+
+.drpdwn {
+	position: relative;
+}
+
+.drpdwn:after {
+	@include dropdown;
+	top: 12px;
+}
+
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+}
+
+.map {
+	max-width: 412px;
+	max-height: 315px;
+	object-fit: contain;
+	border-radius: 8px;
+}
+
+
+
+
+.pref-opt {
+	height: 27px;
+	margin-bottom: 52px;
+	.Type {
+		font-family: $f;
+		margin-left: 20px;
+		font-size: 12.8px;
+		font-weight: 500;
+		width: auto;
+		float: left;
+	}
+}
+
+.pref-button {
+	cursor: pointer;
+	float: right;
+	width: 22px;
+	height: 22px;
+	border-radius: 4.8px;
+	background-color: $deep-sky-blue;
+}
+
+.pref-button-inner {
+	margin: 5px 5px 5px 25px;
+	width: 15px;
+	height: 20px;
+	border-radius: 6.5px;
+	background-color: #ffffff;
+}
+
+
+
+.numberrm {
+	max-width: 238px;
+	width: auto;
+}
+
+
+
+.pref-ckeck {
+	fill: white;
+	width: 10px;
+	height: 10px;
+	margin: 7px;
+}
+
+#divider-full {
+	width: 100vw;
+	border-bottom: solid 1px #e1e1e1e0;
+
+}
+
+.locations {
+	width: max-content;
+
+	float: right;
+	font-family: $f;
+	display: table-cell;
+	color: $pinkish;
+	font-size: 12.8px;
+}
+
+#section2 {
+	margin-top: 40px;
+}
+
+.night {
+	font-family: $f;
+	color: $deep-sky-blue;
+	font-size: 12.8px;
+	margin-bottom: 10px;
+
+}
+
+.flight-days {
+	width: 376px;
+	display: grid;
+	grid-column-gap: 39px;
+	grid-template-rows: 166px;
+	grid-template-columns: 96px 96px 96px;
+}
+
+.fl-day {
+	@include sh-box;
+	width: 96px;
+	height: 125px;
+	margin: 0px auto 0px auto;
+}
+
+.fl-map {
+
+	margin-left: auto;
+	width: 511px;
+}
+
+.fl-day-sel {
+	background-image: url(../img/fl-daysl.png);
+	background-size: contain;
+	height: 131px;
+	box-shadow: none;
+	.fl-day-name {
+		color: white !important;
+	}
+
+}
+
+.fl-day-name {
+	padding-left: 18px;
+
+	font-family: $fm;
+	padding-top: 17px;
+	font-size: 12.8px;
+	color: $white-four;
+
+}
+
+.fl-day-icon {
+
+	padding-top: 37px;
+	padding-left: 33px;
+	fill: $white-four;
+}
+
+.fl-day-bl {
+	.fl-day-name {
+		color: $deep-sky-blue;
+	}
+}
+
+.flexx-container {
+	display: flex;
+	margin-top: 30px;
+	margin-bottom: 44px;
+}
+
+
+
+.fl-bk-title {
+	font-size: 17.4px;
+	padding-bottom: 44px;
+	font-family: $fb;
+	h {
+		font-family: $fm;
+		color: $deep-sky-blue;
+		margin-left: 40px;
+	}
+
+}
+
+.fl-day-cont {
+	width: 376px;
+}
+
+.map-caption {
+	margin-top: 18px;
+	font-family: $f;
+	font-size: 12.8px;
+	color: $pinkish;
+}
+
+.heading-booking {
+	font-size: 17.6px;
+	font-family: $fb;
+	margin-top: 41.4px;
+	.header-booking-sub {
+		color: $deep-sky-blue;
+		font-size: 14px;
+		font-family: $fm;
+		margin-top: 9px;
+		h {
+			margin-left: 40px;
+
+		}
+	}
+}
+
+.booking-bar {
+	@extend .landing-bar;
+	margin-top: 38px;
+	div {
+		font-size: 11.2px;
+	}
+}
+
+
+
+
+
+.it-day-icon {
+	@extend .fl-day-icon;
+	padding-left: 29px;
+}
+
+.ht-bk-title {
+    @extend .fl-bk-title;
+    margin-top: 30px;
+    margin-bottom: 57px;
+}
+
+.criter-table {
+    display: table;
+    
+    
+}
+
+.tr1 {
+    
+    display: table-cell;
+    
+    .fl-day{
+        margin:12px 59px 28px 29px; 
+    }
+    .fl-day-sel{
+        background-image: url("../img/sel-bg.png");
+     height: 147px;
+        width: 124px;
+        margin: 4px 0px 0px 18px;
+        .fl-day-icon{
+        padding-left: 37px;
+    padding-top: 42px;
+    }
+    .fl-day-name {
+        padding-left: 28px;}
+    }
+    
+}
+
+.tr2 {
+    display: table-cell;
+    height: 100%;
+     width: 2px;
+ 
+    border-left: solid 0.8px #e1e1e1;
+}
+
+.tr3 {
+ padding-left: 51px;
+    display: table-cell;
+    width: 100%;
+}
+
+.criter-ht-form {
+position: relative;
+    top: -50px;
+  
+  
+ 
+font-family: $fr;
+        letter-spacing: 1;
+    
+    .input-box{
+          width: 685px;
+    margin-left: auto;
+    margin-right: auto;
+        margin-bottom: 20px;
+        
+    }
+    .input-label , .textI{
+        font-family: $f;
+        color: #4f4f4f;
+        }
+    .input-label{margin-bottom: 0px;}
+}
+
+.criter-ht-row {
+    display: flex;
+	    padding-top: 8px;
+    .input-box{
+        width: 100%;
+    }
+}
+
+.criter-button-1 {
+    @include sm-btn;
+    background-color: #a8a8a8;
+   width: 226px;
+      padding: 15px 1px 12px 1px;
+}
+
+.criter-button-2 {
+    @include sm-btn;
+    width: 439px;
+    margin-left: auto;
+        padding: 15px 1px 12px 1px;
+}
+
+.readonly {
+   color: #d7d7d7 !important;
+}
+
+.addelem-types {
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.addelem-form {
+    
+    top:unset;
+    margin-top: 31px;
+    .criter-button-2{
+        width: 685px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: $fr;
+        letter-spacing: 1;
+    }
+}
+
+.act-times {
+    display: flex;
+    margin-top: 27px;
+    margin-bottom: 29px;
+}
+
+.act-time {
+    @include sm-btn;
+    width: 152px;
+    font-family: $f;
+       
+    font-size: 12.8px;
+    background-color: white;
+    color: black;
+    padding: 16px 0px 14px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.act-time-sel {
+    color:white;
+    background-color: $deep-sky-blue;
+    cursor: default;
+}
+
+.fl-day-name-sm {
+    padding-left: 27px;
+}
+
+.car {
+      padding-top: 42px;
+}
+
+.wrapper-blue {
+     background-color: #f9fbfd;
+}
+
+.fn-divider {
+    display: flex;width: 100%;
+  
+    #divider{
+       float: right!important;
+        width: 48%;
+    }
+    .divleft{
+        float: left !important;
+    }
+}
+
+.middle-div {
+    width: 64px;
+  height: 7px;
+  border-radius: 3.5px;
+  background-color: #bababa;
+        position: relative;
+    top: 3px;
+    float: right;
+}
+
+.display-heading {
+    font-size:  22.4px;
+    font-family: $fb;
+    color: $deep-sky-blue;
+    padding:46px 0px 29px 0px;
+    h{
+        margin-left: 20px;
+        font-family: $fm;
+    }
+}
+
+
+
+

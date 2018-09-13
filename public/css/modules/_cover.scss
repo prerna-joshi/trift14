@@ -1,0 +1,61 @@
+
+.cover {
+
+    img{
+        object-fit: cover;
+    }
+background: url('../img/cover.jpg');
+    border-radius: 10px;
+    background-color: $white-two;
+    height: 315px;
+    width: 946px;
+    background-size: cover;
+}
+
+.cover-notch {
+    background-color: white;
+    width: 193px;
+    height: 68px;
+    border-radius: 10px;
+    position: relative;
+    top: 231px;
+    left: 736px;
+}
+
+.cover-dp {
+    font-family: $fb;
+    background-image: url('../img/dp.jpg');
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background-size: cover;
+    position: absolute;
+    left: 17px;
+    top : 10px;
+}
+
+.cover-name {
+    font-family: $fb;
+    font-size: 16px;
+    font-weight: bold;
+    color: $black;
+    font-size: 16px;
+    position: absolute;
+    left: 73px;
+    top: 21px;
+}
+
+.cover-handle {
+    font-family: $fb;
+    font-size: 12.8px;
+    position: absolute;
+    left: 73px;
+    top: 41px;
+    color: $linkc;
+}
+.hero {
+    max-width: 946px;
+    margin:auto;
+    img{ border-radius: 10px;}
+    
+}
